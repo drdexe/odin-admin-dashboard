@@ -7,3 +7,30 @@
   font-style: normal;
   font-display: swap;
 }
+
+:root {
+  --blue: #1892d3;
+  --gray: #e1e8f0;
+  --yellow: #e2b231;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 4fr;
+}
+
+nav {
+  grid-row: 1 / -1;
+  background-color: var(--blue);
+}
+ main {
+  background-color: var(--gray);
+ }
