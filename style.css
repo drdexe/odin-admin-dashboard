@@ -129,7 +129,7 @@ input:focus {
 .profile.side {
   display: grid;
   grid-template-columns: var(--icon-size) var(--profile-size) max-content;
-  gap: 1em;
+  gap: 5%;
   justify-content: right;
   align-items: center;
 }
@@ -137,7 +137,7 @@ input:focus {
 .profile.main {
   display: grid;
   grid-template: 1fr 1fr / calc(var(--profile-size) * 1.5) auto;
-  gap: .2em 1em;
+  gap: .5vw 1vw;
 }
 
 .profile.main img {
@@ -202,17 +202,17 @@ input:focus {
   background-color: white;
   border-left: 1vw solid var(--card-yellow);
   border-radius: 1vw;
-  height: 20vh;
+  height: 22.5vh;
   padding: 5%;
   display: flex;
   flex-direction: column;
-  gap: .25rem;
  }
 
  .card p {
   font-size: var(--font-size-small);
   color: var(--font-gray);
   flex: 1;
+  margin-top: .25rem;
  }
 
  .icons {
