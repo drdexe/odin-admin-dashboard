@@ -198,7 +198,7 @@ input:focus {
   background-color: var(--background-gray);
   display: grid;
   grid-template: 1fr 1fr / 3fr 1fr;
-  gap: 4vh 2vw;
+  gap: 4vh 4vw;
   padding: 3%;
  }
 
@@ -213,14 +213,14 @@ input:focus {
  .projects .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4vh;
+  gap: 5%;
  }
 
  .projects .card {
   background-color: white;
   border-left: 1vw solid var(--card-yellow);
   border-radius: 1vw;
-  height: 22.5vh;
+  height: clamp(100px, 22.5vh, 500px);
   padding: 5%;
   display: flex;
   flex-direction: column;
