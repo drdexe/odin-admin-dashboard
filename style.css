@@ -30,7 +30,43 @@ body {
 nav {
   grid-row: 1 / -1;
   background-color: var(--blue);
+  color: white;
+  font-weight: bold;
 }
+
+nav ul {
+  display: grid;
+  gap: 1em;
+  margin: 1em;
+  font-size: clamp(.5rem, 1.5vw, 1.5rem);
+}
+
+nav li {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: .5em;
+  align-items: center;
+  font-size: clamp(.75rem, 1.75vw, 1.75rem);
+  margin: 1ch;
+  margin-bottom: 2em;
+}
+
+nav li:nth-child(7) {
+  margin-bottom: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
  main {
   background-color: var(--gray);
  }
