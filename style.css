@@ -14,7 +14,7 @@
   --card-yellow: #e2b231;
   --base-font-size: clamp(.5rem, 1vw, 1.5rem);
   --icon-size: clamp(10px, 2vw, 30px);
-  --profile-size: calc(var(--icon-size) * 1.5);
+  --profile-size: calc(var(--icon-size) * 2);
 }
 
 * {
@@ -29,7 +29,11 @@ ul {
 
 img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1;
+}
+
+.profile img {
+  border-radius: 50%;
 }
 
 body {
@@ -63,7 +67,7 @@ nav li {
 
 .dashboard {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(20px, 1fr) 4fr;
   gap: .5em;
   align-items: center;
   font-size: calc(var(--base-font-size) * 1.5);
