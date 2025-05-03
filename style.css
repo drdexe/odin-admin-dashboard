@@ -143,6 +143,15 @@ input:focus {
   align-items: center;
 }
 
+.profile.side button {
+  background: none;
+  border: none;
+}
+
+.profile.side button:hover {
+  opacity: .5;
+}
+
 .profile.main {
   display: grid;
   grid-template: 1fr 1fr / calc(var(--profile-size) * 1.5) auto;
